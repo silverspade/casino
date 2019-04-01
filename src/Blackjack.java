@@ -1,5 +1,3 @@
-//TO BE DONE: ADD IN CHIPS AND BETTING
-
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,7 +31,7 @@ public class Blackjack {
 			} else {
 				System.out.println("\nLet's begin!");
 			}
-			System.out.println("\nYou will start with 200 chips. We're a brand new casino, so each chip is $1");
+			System.out.println("\nYou will start with 200 chips. We're a budding new casino, so we only have one kind of chip, the $1 one");
 			return cardDeck;
 	}
 	
