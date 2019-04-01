@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * It provides several operations including
  *      initialize, shuffle, deal, and check if empty.
  */
-public class Deck {
+public class Deck extends ArrayList<Card> {
 
 	/**
 	 * cards contains all the cards in the deck.

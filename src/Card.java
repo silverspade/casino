@@ -5,7 +5,7 @@
  *
  * <code>Card</code> represents a playing card.
  */
-public class Card {
+public class Card implements Comparable {
 
 	/**
 	 * String value that holds the suit of the card
@@ -93,5 +93,20 @@ public class Card {
 	@Override
 	public String toString() {
 		return rank + " of " + suit + " (point value = " + pointValue + ")";
+	}
+
+	@Override
+	public int compareTo(Object obj) {
+		if (obj.getClass() != this.getClass()) {
+			return -2;
+		} else {
+			if (this.pointValue() > ((Card) obj).pointValue()) {
+				return 1;
+			} else if (this.pointValue() == ((Card) obj).pointValue()) {
+				return 0;
+			} else {
+				return -1;
+			}
+		}
 	}
 }
